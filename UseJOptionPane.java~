@@ -1,0 +1,5 @@
+public class UseJOptionPane {
+	public static void main (String[] args) {
+		String nameUser = "";	
+	}
+}
