@@ -21,5 +21,7 @@ public class UseJOptionPane {
 
 		System.out.println("Your name is " + nameUser + " and you are " + ageUser + " yesars old.");
 		JOptionPane.showMessageDialog(null, "Your salary is " + salariUser);
+
+		entrada.close();
 	}
 }
