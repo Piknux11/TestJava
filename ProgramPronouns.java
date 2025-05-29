@@ -4,12 +4,16 @@ import javax.swing.JOptionPane;
 public class ProgramPronouns {
 
     public static void main(String[] args) {
+
+	var userPronouns = "";
 	
-	var userPronouns = switch(JOptionPane.showInputDialog("What's your pronouns?")) {
-	case "Men", "M", "m" -> "Men";
-	case "Woman", "W", "w" -> "Woman";
-	default -> "None";
-	};
+	do {
+	    userPronouns = switch(JOptionPane.showInputDialog("What's your pronouns?")) {
+	    case "Men", "M", "m" -> "Men";
+	    case "Woman", "W", "w" -> "Woman";
+	    default -> "None";
+	    };
+	} while (userPronouns.equals("None"));
 
 	var message = "You are a " + userPronouns + "\n" + "And your ideal weight is ";
 
